@@ -1,3 +1,5 @@
+"use client";
+
 import { Suspense } from "react";
 
 import Loading from "./loading";
@@ -14,8 +16,10 @@ export default async function Page() {
   const text = await textPromise();
 
   return (
-    <Suspense fallback={<Loading />}>
-      <h1 className="text-center">{text as string}</h1>
-    </Suspense>
+    <>
+      <Suspense fallback={<Loading />}>
+        <h1 className="text-center">{text as string}</h1>
+      </Suspense>
+    </>
   );
 }
