@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Layout({
   children,
   analytics,
@@ -9,7 +11,15 @@ export default function Layout({
 }) {
   return (
     <>
-      {children} {analytics} {notifications}
+      <div>{children}</div>
+      <div className="flex space-x-4">
+        <div className="flex items-center justify-center p-20 border-black border-2">
+          {analytics}
+        </div>
+        <div className="flex items-center justify-center p-20 border-black border-2">
+          {notifications}
+        </div>
+      </div>
     </>
   );
 }
