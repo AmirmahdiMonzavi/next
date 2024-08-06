@@ -5,7 +5,7 @@ import Loading from "./loading";
 const textPromise = () => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve("Resolved Text");
+      resolve("Resolved Dashboard Content");
     }, 2000);
   });
 };
