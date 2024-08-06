@@ -9,14 +9,19 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  modal,
 }: {
   children: React.ReactNode;
+  modal: React.ReactNode;
 }) {
   return (
     <html lang="en">
       <body>
         <header className="bg-green-500 text-center p-4">Root Layout</header>
-        <main> {children}</main>
+        <main>
+          {children}
+          {modal}
+        </main>
       </body>
     </html>
   );

@@ -3,6 +3,7 @@
 import { Suspense } from "react";
 
 import Loading from "./loading";
+import Link from "next/link";
 
 const textPromise = () => {
   return new Promise((resolve, reject) => {
