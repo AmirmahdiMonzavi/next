@@ -20,7 +20,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
           value={value}
           onChange={changeInputValue}
           type="text"
-          placeholder="Enter somthing then change the route"
+          placeholder="Enter something then change the route"
           className="px-4 py-2 w-[400px] border-2 border-black"
         />
         <div>
@@ -46,7 +46,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
           </Link>
         </div>
       </header>
-      {children}
+      <section> {children}</section>
     </section>
   );
 }
